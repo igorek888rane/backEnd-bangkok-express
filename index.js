@@ -5,7 +5,7 @@ import fileUpload from 'express-fileupload'
 import cors from "cors";
 
 const PORT = process.env.PORT || 5000;
-const DB_URL = 'mongodb+srv://user:user@cluster0.5xci24o.mongodb.net/?retryWrites=true&w=majority'
+const DB_URL = process.env.MONGODB_URI;
 
 const app = express();
 
